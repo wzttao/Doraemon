@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,
+    maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <title>Document</title>
+</head>
+<body>
+    <style id="demo2"></style>
+    <div id="demo"></div>
+    <div id="buttons">
+        <button id="btnPause">暂停</button>
+        <button id="btnPlay">播放</button>
+        <button id="btnSlow">慢速</button>
+        <button id="btnNormal">中速</button>
+        <button id="btnFast">快速</button>
+    </div>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        *::before, *::after{
+           box-sizing: border-box;
+        }
+        #buttons{
+            position: fixed;
+            right: 0;
+            top: 0;
+            z-index: 10;
+            margin-top: 10px;
+            margin-right: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+        #buttons button{
+            margin-bottom: 10px;
+            padding: 4px 8px;
+        }
+        #demo2{
+            display: none;
+        }
+        #demo{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 50vh;
+            border: 1px solid #889977;
+            overflow-y: auto;
+        }
+        #demo::-webkit-scrollbar{
+            display: none;
+        }
+        .box{
+            position: fixed;
+            top: 48vh;
+            left: 25vh;
+            width: 100%;
+            height: 50vh;
+        }
+    </style>
+    <div class="box">
+        <div class="head">
+            <div class="face">
+                <div class="eye_box">
+                    <div class="eye"></div>
+                    <div class="eye"></div>
+                </div>
+                <div class="line L1"></div>
+                <div class="line L2"></div>
+                <div class="line L3"></div>
+                <div class="line R1"></div>
+                <div class="line R2"></div>
+                <div class="line R3"></div>
+            </div>
+            <div class="mouth"></div>
+        </div>
+    </div>
+
+    <script src="/test.cfec6883.js"></script>
+</body>
+</html>
